@@ -215,7 +215,7 @@
     margin-top: 15px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .management-title p {
     font-size: 14px;
   }
@@ -225,6 +225,10 @@
   .join-block {
     height: 372px;
   }
+  .nav_toggle {
+    display: block;
+  }
+  
 }
 @media (max-width: 376px) {
   #process {

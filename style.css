@@ -10,6 +10,26 @@ a {
   width: 80%;
   margin: 0 auto;
 }
+
+.menu-burger {
+  position: absolute;
+  right: -90px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-burger div {
+  margin: 4px 0;
+  width: 40px;
+  height: 5px;
+  background: white;
+}
+
 button {
   border: none;
 }
@@ -22,6 +42,7 @@ body {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +57,10 @@ body {
   font-weight: 700;
   margin-left: 16px;
 }
-
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .header-nav a {
   color: #fff;
   font-size: 16px;
@@ -273,6 +297,11 @@ body {
   font-weight: 500;
   line-height: 26px; /* 162.5% */
 }
+/* .header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .block-card {
   padding: 30px 0;
   display: flex;
@@ -606,4 +635,86 @@ body {
   color: #02897a;
   background: white;
   border-radius: 50%;
+}
+.nav_toggle {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 150ms ease-out;
+  display: none;
+  color: white;
+}
+.nav_toggle:hover {
+  color: coral;
+}
+
+.swipe-menu {
+  background-color: white;
+  -webkit-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.734);
+  -moz-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.784);
+  box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.743);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 320px;
+  max-width: 100%;
+  opacity: 0;
+  left: -320px;
+  visibility: hidden;
+}
+.swipe-menu--show {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+}
+
+.swipe-menu ~ .swipe-menu-overlay {
+  width: 0;
+}
+.swipe-menu--show ~ .swipe-menu-overlay {
+  width: 100%;
+}
+.swipe-menu-close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 40px;
+  transition: opacity 100ms ease-out;
+}
+.swipe-menu-close:hover {
+  opacity: 0.7;
+}
+.swipe-menu-overlay {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 190ms ease-out;
+  background-color: rgba(0, 0, 0, 0.754);
+}
+
+.menu-link a {
+  color: #b81f1f;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.menu-link {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
