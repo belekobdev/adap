@@ -637,7 +637,7 @@ body {
   border-radius: 50%;
 }
 .nav_toggle {
-  font-size: 30px;
+  font-size: 40px;
   background: none;
   border: none;
   cursor: pointer;
@@ -650,7 +650,9 @@ body {
 }
 
 .swipe-menu {
-  background-color: white;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.242);
   -webkit-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.734);
   -moz-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.784);
   box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.743);
@@ -659,7 +661,7 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
-  width: 320px;
+  width: 280px;
   max-width: 100%;
   opacity: 0;
   left: -320px;
@@ -680,18 +682,20 @@ body {
 .swipe-menu-close {
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 15px;
   background: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 50px;
   transition: opacity 100ms ease-out;
+  color: rgba(255, 0, 0, 0.553);
 }
 .swipe-menu-close:hover {
   opacity: 0.7;
 }
 .swipe-menu-overlay {
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -703,18 +707,38 @@ body {
 }
 
 .menu-link a {
-  color: #b81f1f;
+  color: white;
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0;
 }
-
+.menu-link a:active {
+  color: black;
+  text-decoration: underline;
+}
 .menu-link {
   position: relative;
   top: 100px;
-  left: 50px;
+  left: 30px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+
+.menu-logo {
+  position: relative;
+  left: 30px;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-logo img {
+  width: 30px;
+}
+.menu-logo h1 {
+  font-size: 18px;
+  margin-left: 5px;
+  color: white;
 }
