@@ -11,25 +11,6 @@ a {
   margin: 0 auto;
 }
 
-.menu-burger {
-  position: absolute;
-  right: -90px;
-  top: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  cursor: pointer;
-}
-.menu-burger div {
-  margin: 4px 0;
-  width: 40px;
-  height: 5px;
-  background: white;
-}
-
 button {
   border: none;
 }
@@ -636,6 +617,8 @@ body {
   background: white;
   border-radius: 50%;
 }
+
+/*! BugerMenu */
 .nav_toggle {
   font-size: 40px;
   background: none;
@@ -652,7 +635,7 @@ body {
 .swipe-menu {
   display: none;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: rgba(255, 255, 255, 0.297);
   -webkit-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.734);
   -moz-box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.784);
   box-shadow: 15px 2px 12px -4px rgba(0, 0, 0, 0.743);
@@ -661,7 +644,7 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
-  width: 280px;
+  width: 260px;
   max-width: 100%;
   opacity: 0;
   left: -320px;
@@ -741,4 +724,23 @@ body {
   font-size: 18px;
   margin-left: 5px;
   color: white;
+}
+
+.menu-burger {
+  position: absolute;
+  right: -90px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-burger div {
+  margin: 4px 0;
+  width: 40px;
+  height: 5px;
+  background: white;
 }

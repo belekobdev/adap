@@ -30,6 +30,15 @@
   .header-nav {
     display: none;
   }
+  .nav_toggle {
+    display: block;
+  }
+  .swipe-menu {
+    display: block;
+  }
+  .swipe-menu-overlay {
+    display: block;
+  }
   .hero {
     flex-direction: column-reverse;
   }
@@ -224,15 +233,6 @@
   }
   .join-block {
     height: 372px;
-  }
-  .nav_toggle {
-    display: block;
-  }
-  .swipe-menu {
-    display: block;
-  }
-  .swipe-menu-overlay {
-    display: block;
   }
 }
 @media (max-width: 376px) {
